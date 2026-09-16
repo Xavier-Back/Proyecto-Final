@@ -1,0 +1,166 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6%;
+}
+
+.logo h2 {
+    color: gray;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #d42d2d;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+.contenido {
+    height: 400px;
+    background-color: #0c181d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido-principal {
+    color: white;
+    padding: 20px;
+}
+
+.contenido-principal h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.boton {
+    display: inline-block;
+    color: white;
+    text-decoration: wheat;
+    border: 3px solid rgb(93, 16, 218);
+    padding: 1px 2px;
+}
+
+.boton:hover {
+    background-color: #7a1f1f;
+}
+
+
+/* DESTINOS */
+
+.servicios {
+    display: flex;
+    gap: 15px;
+    padding: 20px 7%;
+    background-color: gray;
+}
+
+.producto {
+    background-color: white;
+    border: 4px solid gray;
+    flex: 1;
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10%;
+}
+
+.producto h3 {
+    font-family: Georgia, serif;
+    margin: 10px;
+}
+
+.producto p {
+    color: black;
+    font-size: 16px;
+    margin: 20px;
+}
+
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #394044;
+    color: black;
+    padding: 35px 8%;
+    text-align: center;
+}
+
+.footer-contacto p {
+    color: #ccc;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-redes a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-redes a:hover {
+    color: #80deea;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenido-principal h1 {
+        font-size: 30px;
+    }
+
+    .servicios {
+        flex-direction: column;
+    }
+
+}
