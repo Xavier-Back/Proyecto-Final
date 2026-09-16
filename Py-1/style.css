@@ -1,0 +1,178 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f1e8;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    color: #087f8c;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px 8%;
+    background-color: #dff3f0;
+}
+
+.contenido-principal {
+    width: 45%;
+}
+
+.contenido-principal h1 {
+    font-size: 50px;
+    color: #075e65;
+    margin-bottom: 15px;
+}
+
+.contenido-principal p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3ba112;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.imagen {
+    width: 40%;
+}
+
+.imagen img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* DESTINOS */
+
+.servicios {
+    display: flex;
+    gap: 20px;
+    padding: 30px 8%;
+    background-color: white;
+}
+
+.producto {
+    width: 33%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.producto h3 {
+    padding: 10px;
+    color: #075e65;
+}
+
+.producto p {
+    padding: 0 10px 15px;
+}
+
+
+/* PIE DE PAGINA */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 8%;
+    background-color: #064b52;
+    color: white;
+}
+
+.footer-info {
+    width: 45%;
+}
+
+.footer-contacto {
+    width: 25%;
+}
+
+.footer-redes {
+    width: 20%;
+}
+
+.footer-redes a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+footer > p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header,
+    .contenido,
+    .servicios,
+    footer {
+        flex-direction: column;
+    }
+
+    .contenido-principal,
+    .imagen,
+    .producto {
+        width: 100%;
+    }
+}
